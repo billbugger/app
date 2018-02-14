@@ -96,8 +96,10 @@ class Installer
      */
     public static function setFolderPermissions($dir, $io)
     {
+        $io->write('setFolderPermissions - Starting at: ', $dir);
         // Change the permissions on a path and output the results.
         $changePerms = function ($path, $perms, $io) {
+            $io->write('setFolderPermissions - Currently at: ', $path);
             // Get current permissions in decimal format so we can bitmask it.
             $currentPerms = octdec(substr(sprintf('%o', fileperms($path)), -4));
             if (($currentPerms & $perms) == $perms) {
