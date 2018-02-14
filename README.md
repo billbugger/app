@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+
 Billbugger
-========================
+
 
 [![Build Status](https://travis-ci.org/fr3nch13/billbugger.svg?branch=master)](https://travis-ci.org/fr3nch13/billbugger)
 [![Latest Stable Version](https://poser.pugx.org/fr3nch13/billbugger/version)](https://packagist.org/packages/fr3nch13/billbugger)
@@ -8,63 +8,28 @@ Billbugger
 [![Latest Unstable Version](https://poser.pugx.org/fr3nch13/billbugger/v/unstable)](//packagist.org/packages/fr3nch13/billbugger)
 [![License](https://poser.pugx.org/fr3nch13/billbugger/license)](https://packagist.org/packages/fr3nch13/billbugger)
 [![codecov](https://codecov.io/gh/fr3nch13/billbugger/branch/master/graph/badge.svg)](https://codecov.io/gh/QoboLtd/project-template-cakephp)
-=======
-project-template-cakephp
-========================
-
-[![Build Status](https://travis-ci.org/QoboLtd/project-template-cakephp.svg?branch=master)](https://travis-ci.org/QoboLtd/project-template-cakephp)
-[![Latest Stable Version](https://poser.pugx.org/qobo/project-template-cakephp/v/stable)](https://packagist.org/packages/qobo/project-template-cakephp)
-[![Total Downloads](https://poser.pugx.org/qobo/project-template-cakephp/downloads)](https://packagist.org/packages/qobo/project-template-cakephp)
-[![Latest Unstable Version](https://poser.pugx.org/qobo/project-template-cakephp/v/unstable)](https://packagist.org/packages/qobo/project-template-cakephp)
-[![License](https://poser.pugx.org/qobo/project-template-cakephp/license)](https://packagist.org/packages/qobo/project-template-cakephp)
-[![codecov](https://codecov.io/gh/QoboLtd/project-template-cakephp/branch/master/graph/badge.svg)](https://codecov.io/gh/QoboLtd/project-template-cakephp)
->>>>>>> 12368b4b44289fdaa255c94c6c1e731c5c2888d1
 
 About
 -----
 
-<<<<<<< HEAD
 This is the main source code for billbugger.com
 
 Shoutout to [Qobo](https://www.qobo.biz)/[Qobrix](https://qobrix.com) for their [base template](https://github.com/QoboLtd/project-template-cakephp).
-=======
-This is a template for the new CakePHP projects.
-
-Developed by [Qobo](https://www.qobo.biz), used in [Qobrix](https://qobrix.com).
->>>>>>> 12368b4b44289fdaa255c94c6c1e731c5c2888d1
 
 Install
 -------
 
-<<<<<<< HEAD
 ```bash
 composer create-project fr3nch13/billbugger html
 cd html
-=======
-There are two ways to install and start using this project template.
-
-### Composer Project
-
-You can create a new project from this template using composer.
-
-```bash
-composer create-project qobo/project-template-cakephp example.com
-cd example.com
->>>>>>> 12368b4b44289fdaa255c94c6c1e731c5c2888d1
-git init
-git add .
-git commit -m "Initial commit"
-./bin/build app:install DB_NAME=my_app,PROJECT_NAME="My Project",PROJECT_VERSION="v1.0.0"
 ```
-
-<<<<<<< HEAD
 Update
 ------
 
 ```
 composer update
 ```
-=======
+
 ### Git
 
 Alternatively, you can start using this project by cloning the git repository
@@ -224,5 +189,3 @@ SELECT list is not in GROUP BY clause and contains nonaggregated column ...
 
 If you encounter the above error (often seen on Ubuntu 16.05), make sure
 your SQL mode DOES NOT include "ONLY_FULL_GROUP_BY".
-
->>>>>>> 12368b4b44289fdaa255c94c6c1e731c5c2888d1
