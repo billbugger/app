@@ -7,7 +7,7 @@ Billbugger
 [![Total Downloads](https://poser.pugx.org/fr3nch13/billbugger/downloads)](https://packagist.org/packages/fr3nch13/billbugger)
 [![Latest Unstable Version](https://poser.pugx.org/fr3nch13/billbugger/v/unstable)](//packagist.org/packages/fr3nch13/billbugger)
 [![License](https://poser.pugx.org/fr3nch13/billbugger/license)](https://packagist.org/packages/fr3nch13/billbugger)
-[![codecov](https://codecov.io/gh/fr3nch13/billbugger/branch/master/graph/badge.svg)](https://codecov.io/gh/QoboLtd/project-template-cakephp)
+[![codecov](https://codecov.io/gh/fr3nch13/billbugger/branch/master/graph/badge.svg)](https://codecov.io/gh/fr3nch13/billbugger)
 
 About
 -----
@@ -36,8 +36,8 @@ Alternatively, you can start using this project by cloning the git repository
 and changing remote origin.
 
 ```bash
-git clone https://github.com/QoboLtd/project-template-cakephp.git example.com
-cd example.com
+git clone https://github.com/fr3nch13/billbugger html
+cd html
 ./bin/build app:install DB_NAME=my_app,PROJECT_NAME="My Project",PROJECT_VERSION="v1.0.0"
 git remote remove origin
 git remote add origin git@github.com:YOUR-VENDOR/YOUR-REPOSITORY.git
@@ -51,7 +51,7 @@ When you want to update your project with the latest
 and greatest project-template-cakephp, do the following:
 
 ```
-cd exmample.com
+cd html
 git pull https://github.com/QoboLtd/project-template-cakephp
 ```
 
