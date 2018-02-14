@@ -13,7 +13,6 @@ About
 
 This is the main source code for billbugger.com
 
-
 Shoutout to [Qobo](https://www.qobo.biz)/[Qobrix](https://qobrix.com) for their [base template](https://github.com/QoboLtd/project-template-cakephp).
 
 Install
