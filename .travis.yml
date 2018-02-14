@@ -51,4 +51,8 @@ after_success:
 
 notifications:
   email:
+<<<<<<< HEAD
     - fr3nch13@gmail.com
+=======
+    - webdev@qobocloud.com
+>>>>>>> 12368b4b44289fdaa255c94c6c1e731c5c2888d1

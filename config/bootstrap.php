@@ -233,7 +233,10 @@ if (Configure::read('Swagger.crawl') && Configure::read('API.auth')) {
     Plugin::load('Alt3/Swagger', ['routes' => true]);
 }
 Plugin::load('AdminLTE', ['bootstrap' => true, 'routes' => true]);
+<<<<<<< HEAD
 Plugin::load('Qobo/Calendar', ['bootstrap' => true, 'routes' => true]);
+=======
+>>>>>>> 12368b4b44289fdaa255c94c6c1e731c5c2888d1
 
 // Only load JwtAuth plugin if API authentication is enabled
 if (Configure::read('API.auth')) {

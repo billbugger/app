@@ -96,11 +96,16 @@ class Installer
      */
     public static function setFolderPermissions($dir, $io)
     {
+<<<<<<< HEAD
         $io->write('setFolderPermissions - Starting at: '. $dir);
         $io->write('setFolderPermissions - Content:'. implode("\n", scandir($dir)));
         // Change the permissions on a path and output the results.
         $changePerms = function ($path, $perms, $io) {
             $io->write('setFolderPermissions - Currently at (1): '. $path);
+=======
+        // Change the permissions on a path and output the results.
+        $changePerms = function ($path, $perms, $io) {
+>>>>>>> 12368b4b44289fdaa255c94c6c1e731c5c2888d1
             // Get current permissions in decimal format so we can bitmask it.
             $currentPerms = octdec(substr(sprintf('%o', fileperms($path)), -4));
             if (($currentPerms & $perms) == $perms) {
@@ -116,7 +121,10 @@ class Installer
         };
 
         $walker = function ($dir, $perms, $io) use (&$walker, $changePerms) {
+<<<<<<< HEAD
             $io->write('setFolderPermissions - Currently at (2): '. $dir);
+=======
+>>>>>>> 12368b4b44289fdaa255c94c6c1e731c5c2888d1
             $files = array_diff(scandir($dir), ['.', '..']);
             foreach ($files as $file) {
                 $path = $dir . '/' . $file;
