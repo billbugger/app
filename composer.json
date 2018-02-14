@@ -1,6 +1,6 @@
 {
-    "name": "qobo/project-template-cakephp",
-    "description": "Template for new CakePHP projects",
+    "name": "fr3nch13/billbugger",
+    "description": "Tracking and managing your budget.",
     "license": "MIT",
     "config": {
         "sort-packages": true,
