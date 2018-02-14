@@ -1,11 +1,6 @@
 {
-<<<<<<< HEAD
     "name": "fr3nch13/billbugger",
     "description": "Tracking and managing your budget.",
-=======
-    "name": "qobo/project-template-cakephp",
-    "description": "Template for new CakePHP projects",
->>>>>>> 12368b4b44289fdaa255c94c6c1e731c5c2888d1
     "license": "MIT",
     "config": {
         "sort-packages": true,
@@ -20,10 +15,7 @@
         "mobiledetect/mobiledetectlib": "2.*",
         "pelago/emogrifier": "^1.2",
         "pyrech/composer-changelogs": "~1.4",
-<<<<<<< HEAD
         "qobo/cakephp-calendar": "^3.2",
-=======
->>>>>>> 12368b4b44289fdaa255c94c6c1e731c5c2888d1
         "qobo/cakephp-csv-migrations": "^27.0",
         "qobo/cakephp-groups": "^8.0",
         "qobo/cakephp-menu": "^11.0",
