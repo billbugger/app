@@ -214,3 +214,24 @@ Type::build('timestamp')
 if (Configure::read('debug')) {
     Plugin::load('DebugKit', ['bootstrap' => true]);
 }
+
+Plugin::load('AdminLTE', ['bootstrap' => true, 'routes' => true]);
+Configure::write('Theme', [
+    'title' => env('APP_TITLE', 'BillBugger'),
+    'logo' => [
+        'mini' => env('APP_LOGO_MINI', 'BB'),
+        'large' => env('APP_LOGO_LARGE', 'BillBugger')
+    ],
+    'login' => [
+        'show_remember' => env('APP_LOGIN_SHOW_REMEMBER', true),
+        'show_register' => env('APP_LOGIN_SHOW_REGISTER', true),
+        'show_social' => env('APP_LOGIN_SHOW_SOCIAL', true)
+    ],
+    'folder' => ROOT,
+    'skin' => env('APP_THEME_SKIN', 'blue')
+
+]);
+
+Plugin::load('AssetCompress', ['bootstrap' => true]);
+
+Plugin::load('Migrations');

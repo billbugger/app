@@ -2,9 +2,18 @@
 ##########################
 /config/app.php
 /config/.env
+!.env.default
+!.env.sample
 /logs/*
 /tmp/*
+/tmp/cache/*
+/tmp/cache/models/*
+/tmp/cache/persistent/*
+/tmp/cache/views/*
+/tmp/sessions/*
+/tmp/tests/*
 /vendor/*
+/webroot/files/*
 
 # OS generated files #
 ######################
@@ -38,3 +47,8 @@ nbproject/*
 .vscode
 # Sass preprocessor
 .sass-cache/
+
+# Added features #
+##################
+track empty directories
+!.gitkeep
