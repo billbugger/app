@@ -9,10 +9,10 @@
         "cakephp/cakephp": "3.5.*",
         "cakephp/migrations": "^1.0",
         "cakephp/plugin-installer": "^1.0",
+        "gourmet/whoops": "~1.0",
         "josegonzalez/dotenv": "2.*",
         "maiconpinto/cakephp-adminlte-theme": "^1.0",
-        "mobiledetect/mobiledetectlib": "2.*",
-        "oldskool/whoops-cakephp": "~2.1"
+        "mobiledetect/mobiledetectlib": "2.*"
     },
     "require-dev": {
         "cakephp/bake": "^1.1",
