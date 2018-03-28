@@ -7,18 +7,22 @@
  * For full copyright and license information, please see the LICENSE.txt
  * Redistributions of files must retain the above copyright notice.
  *
- * @copyright     Copyright (c) Cake Software Foundation, Inc. (https://cakefoundation.org)
- * @link          https://cakephp.org CakePHP(tm) Project
+ * @copyright     Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
+ * @link          http://cakephp.org CakePHP(tm) Project
  * @since         0.10.8
- * @license       https://opensource.org/licenses/mit-license.php MIT License
+ * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-/*
- * Configure paths required to find CakePHP + general filepath constants
+/**
+ * Configure paths required to find CakePHP + general filepath
+ * constants
  */
 require __DIR__ . '/paths.php';
 
-/*
+// Use composer to load the autoloader.
+require ROOT . DS . 'vendor' . DS . 'autoload.php';
+
+/**
  * Bootstrap CakePHP.
  *
  * Does the various bits of setup that CakePHP needs to do.
@@ -123,7 +127,7 @@ if ($isCli) {
     require __DIR__ . '/bootstrap_cli.php';
 }
 
-/*
+/**
  * Set the full base URL.
  * This URL is used as the base of all absolute links.
  *

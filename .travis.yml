@@ -15,9 +15,6 @@ matrix:
   allow_failures:
     - php: 7.2
     - php: nightly
-  include:
-    - php: 7.0
-      env: PHPCS=1
 
 install:
   - ./bin/composer validate --strict
