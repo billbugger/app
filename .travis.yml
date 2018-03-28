@@ -24,9 +24,9 @@ install:
   - ./bin/composer install --no-interaction --no-progress --no-suggest
 
 before_script:
-  - if [[ $PHPCS = 1 ]]; then composer require cakephp/cakephp-codesniffer:~2.1; fi
+  - if [[ $PHPCS = 1 ]]; then composer require cakephp/cakephp-codesniffer; fi
+  - if [[ $PHPCS != 1 ]]; then composer require phpunit/phpunit; fi
   - if [[ $PHPCS != 1 ]]; then composer install; fi
-  - if [[ $PHPCS != 1 ]]; then composer require phpunit/phpunit:"^5.7|^6.0"; fi
   - if [[ $PHPCS != 1 ]]; then composer run-script post-install-cmd --no-interaction; fi
 
 script:
