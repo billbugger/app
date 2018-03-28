@@ -1,0 +1,22 @@
+!build/
+build/*
+!build/Robo/
+!build/Utility/
+vendor/
+node_modules/
+.env
+etc/nginx.conf
+etc/ssl/*
+/config/app.php
+tmp/
+logs/
+<<<<<<< HEAD
+webroot/uploads
+config/Migrations/schema-dump-default.lock
+config/Migrations/schema-dump-test.lock
+=======
+webroot/uploads/
+config/Migrations/schema-dump-default.lock
+config/Migrations/schema-dump-test.lock
+.DS_Store
+>>>>>>> 12368b4b44289fdaa255c94c6c1e731c5c2888d1
