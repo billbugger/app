@@ -30,7 +30,6 @@ before_script:
   - if [[ $PHPCS != 1 ]]; then composer run-script post-install-cmd --no-interaction; fi
 
 script:
-  - yarn test
   - if [[ $PHPCS != 1 ]]; then vendor/bin/phpunit --group example --no-coverage; fi
   - if [[ $PHPCS != 1 ]]; then vendor/bin/phpunit --exclude-group example; fi
   - if [[ $PHPCS != 1 ]]; then vendor/bin/phpunit; fi

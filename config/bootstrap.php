@@ -217,8 +217,10 @@ if (Configure::read('debug')) {
 
 Plugin::load('AdminLTE', ['bootstrap' => true, 'routes' => true]);
 
-
-
+/*
+ *
+ * Configuration for the AdminLTE plugin
+ */
 Configure::write('Theme', [
     'title' => 'Billbugger',
     'logo' => [
