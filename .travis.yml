@@ -1,0 +1,42 @@
+language: php
+
+sudo: false
+dist: trusty
+
+php:
+  - 5.6
+  - 7.0
+  - 7.1
+  - 7.2
+  - nightly
+
+matrix:
+  fast_finish: true
+  allow_failures:
+    - php: 7.2
+    - php: nightly
+
+install:
+  - ./bin/composer validate --strict
+  - ./bin/composer install --no-interaction --no-progress --no-suggest
+
+before_script:
+  - if [[ $PHPCS = 1 ]]; then composer require cakephp/cakephp-codesniffer; fi
+  - if [[ $PHPCS != 1 ]]; then composer require phpunit/phpunit; fi
+  - if [[ $PHPCS != 1 ]]; then composer install; fi
+  - if [[ $PHPCS != 1 ]]; then composer run-script post-install-cmd --no-interaction; fi
+
+script:
+  - if [[ $PHPCS != 1 ]]; then vendor/bin/phpunit --group example --no-coverage; fi
+  - if [[ $PHPCS != 1 ]]; then vendor/bin/phpunit --exclude-group example; fi
+  - if [[ $PHPCS != 1 ]]; then vendor/bin/phpunit; fi
+  - if [[ $PHPCS = 1 ]]; then vendor/bin/phpcs -p --extensions=php --standard=vendor/cakephp/cakephp-codesniffer/CakePHP ./src ./tests ./config ./webroot; fi
+
+after_success:
+  - curl -s https://codecov.io/bash > /tmp/codecov.sh
+  - chmod +x /tmp/codecov.sh
+  - /tmp/codecov.sh -s tmp/test-results
+
+notifications:
+  email:
+    - fr3nch13@gmail.com
