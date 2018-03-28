@@ -49,13 +49,13 @@ use Cake\Utility\Security;
  * You should copy `config/.env.default to `config/.env` and set/modify the
  * variables as required.
  */
-// if (!env('APP_NAME') && file_exists(CONFIG . '.env')) {
-//     $dotenv = new \josegonzalez\Dotenv\Loader([CONFIG . '.env']);
-//     $dotenv->parse()
-//         ->putenv()
-//         ->toEnv()
-//         ->toServer();
-// }
+if (!env('APP_NAME') && file_exists(CONFIG . '.env')) {
+    $dotenv = new \josegonzalez\Dotenv\Loader([CONFIG . '.env']);
+    $dotenv->parse()
+        ->putenv()
+        ->toEnv()
+        ->toServer();
+}
 
 /*
  * Read configuration file and inject configuration into various
@@ -214,3 +214,38 @@ Type::build('timestamp')
 if (Configure::read('debug')) {
     Plugin::load('DebugKit', ['bootstrap' => true]);
 }
+
+Plugin::load('AdminLTE', ['bootstrap' => true, 'routes' => true]);
+
+
+
+Configure::write('Theme', [
+    'title' => 'Billbugger',
+    'logo' => [
+        'mini' => 'BB',
+        'large' => 'BillBugger'
+    ],
+    'login' => [
+        'show_remember' => true,
+        'show_register' => true,
+        'show_social' => true
+    ],
+    'folder' => ROOT,
+    'skin' => 'green'
+
+]);
+
+# skin options:
+
+# blue (Default)
+# blue-light
+# yellow
+# yellow-light
+# green
+# green-light
+# purple
+# purple-light
+# red
+# red-light
+# black
+# black-light

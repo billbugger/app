@@ -27,13 +27,8 @@ use Cake\Event\Event;
  */
 class AppController extends Controller
 {
-
     /**
      * Initialization hook method.
-     *
-     * Use this method to add common initialization code like loading components.
-     *
-     * e.g. `$this->loadComponent('Security');`
      *
      * @return void
      */
@@ -50,5 +45,17 @@ class AppController extends Controller
          */
         //$this->loadComponent('Security');
         //$this->loadComponent('Csrf');
+    }
+
+    /**
+     * beforeRender callback.
+     *
+     * @param \Cake\Event\Event $event Event.
+     * @return \Cake\Http\Response|null|void
+     */
+    public function beforeRender(Event $event)
+    {
+        $this->viewBuilder()->setTheme('AdminLTE');
+        $this->viewBuilder()->setClassName('AdminLTE.AdminLTE');
     }
 }
